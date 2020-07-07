@@ -1,0 +1,5 @@
+Data/
+Submissions/
+*.gz
+*.pkl
+*.pq
