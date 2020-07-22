@@ -3,3 +3,9 @@ Submissions/
 *.gz
 *.pkl
 *.pq
+*.pyc
+*.bin
+*/.ipynb_checkpoints/*
+*/__pycache__/*
+*/models/*
+*/runs/*
