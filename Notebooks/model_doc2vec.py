@@ -71,6 +71,8 @@ def train_model(document_text, word_freq = None, corpus_count=None, **kwargs):
     else:
         model.build_vocab_from_freq(word_freq, corpus_count=corpus_count)
     print('Vocab ready')
+    
+    print(model.docvecs.vectors_docs.shape)
         
     model.train(document_text, total_examples=model.corpus_count, epochs=model.epochs, callbacks=[ProgressMeter(model.epochs)])
     
