@@ -18,7 +18,7 @@ regex = r"<((?=!\-\-)!\-\-[\s\S]*\-\-|((?=\?)\?[\s\S]*\?|((?=\/)\/[^.\-\d][^\/\]
 
 reg_remove = r"<[^>]*>"
 
-model = Doc2Vec.load('models/vector_size:300_min_count:2_epochs:10_window:7_seed:42_workers:4_negative:50.bin')
+model = Doc2Vec.load('models/vector_size:400_min_count:2_epochs:20_window:5_seed:42_workers:4_negative:20.bin')
 
 def extract_html(text):
     return [e[0] for e in re.findall(regex, text, re.MULTILINE)]

@@ -1,5 +1,6 @@
 Data/
 Submissions/
+*.txt
 *.gz
 *.pkl
 *.pq
